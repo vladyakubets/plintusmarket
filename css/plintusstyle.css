@@ -17,6 +17,8 @@ body {
     max-width: 1145px;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .title {
@@ -467,11 +469,20 @@ body {
     display: none;
 }
 
-.cards__box:hover{
-    z-index: 10;
-    min-height: max-content;
+.cards__box:hover {
+    z-index: 11;
+    height: max-content;
+    position: absolute;
 }
 
+.cards__box:hover .hidden-paragraph{
+    display: block;
+}
+
+.cards__wrapper{
+    max-width: 33%;
+    width: 100%;
+}
 
 
 /* FOOTER */
